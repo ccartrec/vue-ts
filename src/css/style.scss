@@ -42,21 +42,26 @@ hr {
 
 #nav {
   background: rgba(0,0,0,0.4);
-  padding: 40px;
+  padding: 40px 0;
   color: #fff;
   flex: none;
   font-size: 18px;
-
-  .btn {margin-bottom: 24px}
 
   a {
     display: block;
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+    padding: 8px 40px 8px 80px;
+    background-size: 24px !important;
+
+    &.new {background: url('../src/assets/paper.svg') no-repeat left 40px center}
+    &.incoming {background: url('../src/assets/inbox.svg') no-repeat left 40px center}
+    &.outgoing {background: url('../src/assets/outbox.svg') no-repeat left 40px center}
 
     + a {margin-top: 16px;}
 
+    &.router-link-exact-active {background-color: rgba(255,255,255,0.1)}
   }
 }
 
