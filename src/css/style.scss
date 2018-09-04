@@ -104,12 +104,17 @@ form {
 
 
 .letters-item {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
   cursor: pointer;
 
   &:hover {background-color: #f5f5f5}
 
   > * {
     padding: 8px 4px;
+    display: table-cell;
+    vertical-align: middle;
     border-bottom: 1px solid #7156f3;
   }
 
@@ -119,7 +124,7 @@ form {
     button {
       width: 32px;
       height: 32px;
-     // background: url('../src/assets/icon-delete.svg') no-repeat center;
+      //background: url('../src/assets/icon-delete.svg') no-repeat center;
       background-size: 20px;
       border: 1px solid #7156f3;
       border-radius: 4px;

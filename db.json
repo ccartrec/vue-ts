@@ -1,0 +1,14 @@
+{
+  "outgoing": [
+    { "date": "02.12.2018", "subject": "Письмо от Бро", "recipient": "bifit@yandex.ru" },
+    { "date": "03.12.2018", "subject": "Леонид верни долги", "recipient": "testserver@site.ru" },
+    { "date": "04.12.2018", "subject": "Рекламная рассылка шампуней", "recipient": "prostomail@mail.ru" },
+    { "date": "05.12.2018", "subject": "Фонд защиты животных", "recipient": "master@rambler.ru" },
+    { "date": "06.12.2018", "subject": "Проголосуйте за петицию", "recipient": "ua@rossia.com" },
+    { "date": "07.12.2018", "subject": "Просто письмецо", "recipient": "reklama@gmail.ru" }
+  ],
+  "incoming": [
+    { "date": "11-09-02", "subject": "Письмо от Арсения" }
+  ],
+  "profile": { "name": "typicode" }
+}

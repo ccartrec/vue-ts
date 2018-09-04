@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Исходящие</h1>
-    <div class="letters-item" v-for="(letter, idx) in letters" :key="idx" @click="viewMessage('outgoing', letter.subject, letter.recipient, letter.message)">
+    <h1>Входящие</h1>
+    <div class="letters-item" v-for="(letter, idx) in letters" :key="idx">
       <div class="date">{{ letter.date }}</div>
       <div class="sender">{{ letter.recipient }}</div>
       <div class="subject">{{ letter.subject }}</div>
@@ -28,7 +28,7 @@
         },
         mounted() {
             axios
-                .get('http://localhost:3000/outgoing')
+                .get('http://localhost:3000/incoming')
                 .then(response => (this.letters = (response.data)));
         }
     };

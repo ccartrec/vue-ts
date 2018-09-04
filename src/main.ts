@@ -3,24 +3,9 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';
-import VueFire from 'vuefire';
-import firebase from 'firebase';
-import 'firebase/firestore';
+import VueResource from 'vue-resource';
 
-Vue.use(VueFire);
-
-firebase.initializeApp({
-    apiKey: 'AIzaSyDqxjKZLkCkLLHWZ2H7HIX8pspdduk7IVk',
-    authDomain: 'fire-vue-pro.firebaseapp.com',
-    databaseURL: 'https://fire-vue-pro.firebaseio.com',
-    projectId: 'fire-vue-pro',
-    storageBucket: 'fire-vue-pro.appspot.com',
-    messagingSenderId: '947707931490',
-});
-
-export const db = firebase.firestore();
-const settings = {timestampsInSnapshots: true};
-db.settings(settings);
+Vue.use(VueResource);
 
 Vue.config.productionTip = false;
 
